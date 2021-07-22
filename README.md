@@ -36,3 +36,26 @@ var name2, address2, age2 = "name2", "address2", 25
 language := "Golang"
 ```
 ==> Su dung nhieu
+
+## Kieu du lieu
+### int
+```
+Range: 
+fmt.Println(math.MinInt32)
+fmt.Println(math.MaxInt32)
+e.x
+Range int 8: -128 -- 127
+Bits:
+fmt.Println(bits.OnesCount8(math.MaxUint8))
+```
+### uint so nguyen duong
+var myUint uint = -10 ==> sai
+### Byte
+Byte la kieu uint8
+### Float: kieu so thuc
+float32, float64
+### complex: kieu so phuc
+z = a + bi
+```
+var z1 complex64 = 10 + 1i
+```
