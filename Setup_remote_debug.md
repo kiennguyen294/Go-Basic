@@ -47,3 +47,9 @@ dlv --listen=:40000 --headless=true --api-version=2 --accept-multiclient exec /u
 
 Select **Run** --> **Edit Configurations** and setup as a picture
 ![](concurrency/images/Remote_debug.png)
+
+*Ref*
+
+https://kupczynski.info/2020/05/17/remote-debug-go-code.html
+
+https://golangbot.com/debugging-go-delve/
