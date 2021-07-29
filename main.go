@@ -120,9 +120,21 @@ func main()  {
 	fmt.Println(cap(slice12))
 
 	/// 2.append them gia tri vao slice
+	fmt.Println("========== append slice =====================")
 	var slice13 []int
 	slice13 = append(slice13, 100)
 	fmt.Println(slice13)
+
+	slice14 := []int{10, 20, 30, 40, 50}
+	newslice14 := slice14[1:3]
+	newslice14 = append(newslice14, 60)
+	fmt.Println(newslice14)
+	fmt.Println(slice14)
+
+	newslice15 := append(slice14,70)
+	fmt.Println("#############cap of slice 15")
+	fmt.Println(cap(newslice15))
+	fmt.Println(len(newslice15))
 
 	///3. copy
 	src := []string {"A", "B", "C", "D"}
@@ -247,6 +259,22 @@ func main()  {
 	var p7 *int = &c
 	applyPointer(p7)
 	fmt.Println(c)
+
+	var array21 [3]*string
+	array22 := [3]*string {new(string), new(string), new(string)}
+
+	*array22[0] = "Red"
+	*array22[1] = "Blue"
+	*array22[2] = "Green"
+
+	array21 = array22
+
+	fmt.Println("++++++++++++ Array21 ++++++++++++++" )
+	fmt.Println(array21)
+	fmt.Println(array22)
+
+	fmt.Println(*array21[0])
+
 
 
 }
